@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/russellborja/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-1b334b8f656a54b60accd97b845e13f2ff81599d.jar" />
+    </item>
+    <item
+        jar="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/pre-dexed/debug/classes-25a41eb2fb2825aed17f445469292a079ff3a540.jar" />
+    </item>
+    <item
+        jar="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/pre-dexed/debug/classes-79aa7ac5cb7d560d51b592569a656c70e9d07f8d.jar" />
+    </item>
+    <item
+        jar="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/russellborja/AndroidStudioProjects/SaladBowl/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5b63c3204f7c765831e246418e8a9798621e9ee0.jar" />
+    </item>
+
+</items>
