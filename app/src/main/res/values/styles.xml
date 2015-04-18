@@ -10,4 +10,8 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="TitleTheme">
+        <item name="android:textSize">30dp</item>
+    </style>
+
 </resources>

@@ -10,7 +10,13 @@
     <string name="team1player">Team 1 Player</string>
     <string name="teamone">Team One</string>
     <string name="teamtwo">Team Two</string>
-    <string name="submit">Submit</string>
+    <string name="submit">Let\'s Play!</string>
+
+    <string-array name="word_count_array">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 
     <string-array name="letters_array">
         <item>A</item>
@@ -40,4 +46,10 @@
         <item>Y</item>
         <item>Z</item>
     </string-array>
+
+    <string name="title_activity_input_words">InputWordsActivity</string>
+    <string name="title">SALAD BOWL</string>
+    <string name="starting_letter">Letter:</string>
+    <string name="words_per_player">Word Count:</string>
+
 </resources>

@@ -2,6 +2,7 @@ package com.russellborja.saladbowl;
 
 import android.app.Fragment;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 import com.russellborja.saladbowl.data.Contract;
 import com.russellborja.saladbowl.data.DbHelper;
@@ -25,6 +27,8 @@ public class StartFragment extends Fragment {
         static final String LOG_TAG = "StartFragment";
         private TeamOneAdapter teamOneAdapter;
         private TeamTwoAdapter teamTwoAdapter;
+        private final String selectLetter = "SelectLetter";
+        private final String selectWordCount = "WordCount";
 
         public StartFragment() {
         }
@@ -73,6 +77,13 @@ public class StartFragment extends Fragment {
             //reset buttons
             Button teamOneReset = (Button) getActivity().findViewById(R.id.team_one_reset);
             Button teamTwoReset = (Button) getActivity().findViewById(R.id.team_two_reset);
+
+            //submit button
+            Button submitButton = (Button) getActivity().findViewById(R.id.submit_button);
+
+            //spinners
+            final Spinner letterSpinner = (Spinner) getActivity().findViewById(R.id.letter_spinner);
+            final Spinner wordCountSpinner = (Spinner) getActivity().findViewById(R.id.word_count_spinner);
 
             //text edit fields
             final EditText teamOneEditText = (EditText) getActivity().findViewById(R.id.team_one_edittext);
@@ -155,6 +166,20 @@ public class StartFragment extends Fragment {
                     updateListView(cursor, false);
                 }
             });
+
+            //on submit, go to next activity
+            submitButton.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    String letter = letterSpinner.getSelectedItem().toString();
+                    int wordCount = Integer.parseInt(wordCountSpinner.getSelectedItem().toString());
+                    Intent intent = new Intent(getActivity(), InputWordsActivity.class);
+                    intent.putExtra(selectLetter, letter);
+                    intent.putExtra(selectWordCount, wordCount);
+                    startActivity(intent);
+
+                }
+            });
+
 
         }
 
